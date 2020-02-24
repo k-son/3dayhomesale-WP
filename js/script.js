@@ -17,12 +17,14 @@ function whiteNavbar() {
   if (document.body.scrollTop > 40 || document.documentElement.scrollTop > 40) {
     navbar.classList.add('whiteNavbar');
     nav.style.paddingTop = 0;
+    //navbar.style.backgroundColor = "#fff";
     navLinks.forEach(el => el.classList.add('whiteNavLinkText'));
     hamburgerInner.style.backgroundColor = hamburgerGrey;
 
   } else {
     navbar.classList.remove('whiteNavbar');
     nav.style.paddingTop = "30px";
+    //navbar.style.backgroundColor = "#121d26";
     hamburgerInner.style.backgroundColor = colorWhite;
   }
 }
