@@ -129,6 +129,23 @@
   padding-bottom: 4rem;
 }
 
+.blog__more-posts {
+  display: flex;
+  justify-content: space-between;
+  font-size: 1.4rem;
+  max-width: 120rem;
+  margin: 0 auto 6rem auto;
+  padding: 0 2.5rem;
+  color: #2b2b2b;
+  color: #f54337;
+}
+
+.blog__prvious-post:hover,
+.blog__next-post:hover {
+  text-decoration: underline;
+}
+
+/* Pages */
 .page-numbers {
   margin: 0 .5rem;
   color: #2b2b2b;
@@ -142,9 +159,6 @@
 .page-numbers.current {
   color: #666;
 }
-
-
-/* Pages */
 
 .page__content {
   margin-top: 8rem;
