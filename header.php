@@ -27,6 +27,7 @@
           <li class="nav__list__item"><a href="<?php echo site_url('/index.php/#whoarewe'); ?>" class="nav__list__link">Who are we</a></li>
           <li class="nav__list__item"><a href="<?php echo site_url('/index.php/#howitworks'); ?>" class="nav__list__link">How it works</a></li>
           <li class="nav__list__item"><a href="<?php echo site_url('/blog'); ?>" class="nav__list__link">Blog</a></li>
+          <li class="nav__list__item"><a href="<?php echo site_url('/courses'); ?>" class="nav__list__link">We Educate</a></li>
         </ul>
         <button class="hamburger hamburger--collapse" type="button">
           <span class="hamburger-box">

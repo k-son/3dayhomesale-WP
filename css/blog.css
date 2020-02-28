@@ -57,6 +57,11 @@
 .blog__back-to-blog {
   font-size: 1.6rem;
   color: #f54337;
+  border-bottom: 1px solid transparent;
+}
+
+.blog__back-to-blog:hover {
+  border-bottom: 1px solid #f54337;
 }
 
 /* Blog content and blog posts */
@@ -75,6 +80,10 @@
   font-size: 3.2rem;
   font-weight: 500;
   color: #2b2b2b;
+}
+
+.blog__post__title:hover {
+  color: #f54337;
 }
 
 .blog__post__meta {
@@ -148,9 +157,14 @@
   color: #f54337;
 }
 
+.blog__previous-post,
+.blog__next-post {
+  border-bottom: 1px solid transparent;
+}
+
 .blog__previous-post:hover,
 .blog__next-post:hover {
-  text-decoration: underline;
+  border-bottom: 1px solid #f54337;
 }
 
 .blog__previous-post__img {
@@ -176,4 +190,44 @@
 
 .page__content {
   margin-top: 8rem;
+}
+
+
+/* Courses custom post type */
+.course__date {
+  position: relative;
+  display: inline-block;
+  width: 28rem;
+  font-size: 2rem;
+  font-weight: 500;
+  padding: .8rem 1.6rem;
+  color: #f54337;
+  background-color: #f0f0f0;
+  border-radius: 4px;
+  margin-bottom: .8rem;
+  margin-left: -1.6rem;
+}
+
+.course__date--single-course {
+  display: inline-block;
+  font-size: 1.6rem;
+  padding: 1rem 2rem;
+  color: #fff;
+  background-color: #f54337;
+  border-radius: 4px;
+}
+
+.course__go-to-archive {
+  font-size: 1.6rem;
+  text-align: center;
+  margin: 0 auto 6rem auto;
+}
+
+.course__go-to-archive__link {
+  color: #f54337;
+  border-bottom: 1px solid transparent;
+}
+
+.course__go-to-archive__link:hover {
+  border-bottom: 1px solid #f54337;
 }

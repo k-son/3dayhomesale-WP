@@ -14,6 +14,24 @@
     add_theme_support('post-thumbnails');
   }
 
-  add_action('after_setup_theme', 'homesales_features')
+  add_action('after_setup_theme', 'homesales_features');
 
+  function homesales_adjust_query($query) {
+    if (!is_admin() && is_post_type_archive('course') && $query->is_main_query()) {
+      $today = date('F d, Y ');
+      $query -> set('meta_key', 'course_date');
+      $query -> set('orderby', 'meta_value_num');
+      $query -> set('order', 'ASC');
+      $query -> set('meta_query', array(
+        array(
+          'key' => 'course_date',
+          'compare' => '>=',
+          'value' => $today,
+          'type' => 'numeric'
+        )
+        ));
+    }
+  }
+
+  add_action('pre_get_posts', 'homesales_adjust_query');
 ?>
