@@ -13,7 +13,7 @@
   <?php 
     $today = date('Ymd'); 
     $courses = new WP_Query(array(
-      /*'paged' => get_query_var('paged', 1),*/
+      'paged' => get_query_var('paged', 1),
       'post_type' => 'course',
       'meta_key' => 'course_date',
       'orderby' => 'meta_value_num', 
