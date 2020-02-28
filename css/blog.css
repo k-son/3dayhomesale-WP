@@ -88,25 +88,13 @@
 
 .blog__post__meta {
   font-size: 1.2rem;
-  padding: 1rem 0;
+  padding: .8rem 0 1.6rem;
 }
 
 .blog__post__meta__author,
 .blog__post__meta__category {
   color: #f54337;
   padding: 0 .3rem;
-}
-
-.blog__post__meta__author:hover,
-.blog__post__meta__category:hover {
-
-} 
-
-.blog__post__meta__time {
-}
-
-.blog__post__meta__category {
-
 }
 
 .blog__post__featured-image {
@@ -124,7 +112,7 @@
   line-height: 30px;
   letter-spacing: .5px;
   color: #666;
-  margin: 1rem 0 6rem;
+  margin: 1rem 0 8rem;
 }
 
 .blog__post__continue-reading {
