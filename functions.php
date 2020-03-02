@@ -15,8 +15,10 @@
   }
 
   add_action('after_setup_theme', 'homesales_features');
-
+/*
   function homesales_adjust_query($query) {
+
+    // Handled by queries in archive-course.php and page-past-courses.php
     if (!is_admin() && is_post_type_archive('course') && $query->is_main_query()) {
       $today = date('F d, Y ');
       $query -> set('meta_key', 'course_date');
@@ -34,4 +36,5 @@
   }
 
   add_action('pre_get_posts', 'homesales_adjust_query');
+  */
 ?>
