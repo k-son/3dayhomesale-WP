@@ -12,6 +12,9 @@
   function homesales_features() {
     add_theme_support('title-tag');
     add_theme_support('post-thumbnails');
+    add_image_size('instructorPortrait', 260, 400, true);
+    add_image_size('instructorEvent', 300, 200, true);
+    add_image_size('instructorBanner', 1500, 200, true);
   }
 
   add_action('after_setup_theme', 'homesales_features');

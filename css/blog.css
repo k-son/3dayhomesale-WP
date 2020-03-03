@@ -3,6 +3,11 @@
   min-height: calc(100vh - 11rem);
 }
 
+.horizontal-rule {
+  color: #ddd;
+  margin-bottom: 2.4rem;
+}
+
 /* Header section */
 .blog__welcome {
  width: 100%;
@@ -218,4 +223,83 @@
 
 .course__go-to-archive__link:hover {
   border-bottom: 1px solid #f54337;
+}
+
+.course__instructors__h2 {
+  font-size: 2.4rem;
+  color: #2b2b2b;
+  margin-bottom: 3.2rem;
+}
+
+.course__instructors__list {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 4rem;
+}
+
+.course__instructor {
+  display: block;
+  position: relative;
+  overflow: hidden;
+}
+
+.course__instructor:not(:last-of-type) {
+  margin-right: 2.4rem;
+}
+
+.course__instructor__image {
+  border-radius: 4px;
+  transition: transform .3s;
+}
+
+.course__instructor__image:hover {
+  transform: scale(1.1);
+}
+
+.course__instructor__name {
+  display: inline-block;
+  width: 300px;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  font-size: 1.6rem;
+  text-align: center;
+  color: #fff;
+  background-color: #f54337;
+  padding: .4rem;
+  border-bottom-left-radius: 4px;
+  border-bottom-right-radius: 4px;
+}
+
+
+/* Instructor post type */
+
+.instructor__container {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 6rem;
+}
+
+.instructor__image {
+  border-radius: 4px;
+}
+
+.instructor__text {
+  font-size: 1.6rem;
+  line-height: 30px;
+  letter-spacing: .5px;
+  color: #666;
+  padding: 2.4rem;
+}
+
+@media only screen and (max-width: 700px) {
+
+  .instructor__container {
+    flex-direction: column;
+  }
+
+  .instructor__text {
+    padding: 2.4rem 0;
+  }
+
 }
