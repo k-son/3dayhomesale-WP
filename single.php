@@ -5,7 +5,7 @@
   <header class="blog__welcome">
     <div class="blog__welcome__txt-box">
       <h1 class="blog__h1"><?php the_title(); ?></h1>
-      <h2 class="blog__h2 instructor__slogan"><?php echo get_field('slogan'); ?></h2>
+      <h2 class="blog__h2"><?php echo get_field('slogan'); ?></h2>
       <a class="blog__back-to-blog" href="<?php echo site_url('/blog'); ?>">&larr; blog</a>
     </div>
   </header>
