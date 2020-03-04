@@ -34,19 +34,21 @@
       </div>
     <?php 
       $relatedInstructors = get_field('instructor');
-      echo '<hr class="horizontal-rule">';
-      echo '<h2 class="course__instructors__h2">Our instructor(s) will be:</h2>';
-      echo '<ul class="course__instructors__list">';
       if ($relatedInstructors) {
-        foreach($relatedInstructors as $instructor) { ?>
-          <li class="course__instructor">
-            <a class="course__instructor__link" href="<?php echo get_the_permalink($instructor); ?>">
-              <img class="course__instructor__image" src="<?php echo get_the_post_thumbnail_url($instructor, 'instructorEvent'); ?>">
-              <span class="course__instructor__name"><?php echo get_the_title($instructor); ?></span>
-            </a>
-          </li>
-      <?php }
-        echo '</ul>';
+        echo '<hr class="horizontal-rule">';
+        echo '<h2 class="course__instructors__h2">Our instructor(s):</h2>';
+        echo '<ul class="course__instructors__list">';
+        if ($relatedInstructors) {
+          foreach($relatedInstructors as $instructor) { ?>
+            <li class="course__instructor">
+              <a class="course__instructor__link" href="<?php echo get_the_permalink($instructor); ?>">
+                <img class="course__instructor__image" src="<?php echo get_the_post_thumbnail_url($instructor, 'instructorEvent'); ?>">
+                <span class="course__instructor__name"><?php echo get_the_title($instructor); ?></span>
+              </a>
+            </li>
+        <?php }
+          echo '</ul>';
+        }
       }
     ?>
     </div>
