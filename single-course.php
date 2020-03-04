@@ -5,6 +5,7 @@
   <header class="blog__welcome">
     <div class="blog__welcome__txt-box">
       <h1 class="blog__h1"><?php the_title(); ?></h1>
+      <h2 class="blog__h2"><?php echo get_field('slogan'); ?></h2>
       <a class="blog__back-to-blog" href="<?php echo get_post_type_archive_link('course'); ?>">&larr; All events</a>
     </div>
   </header>
@@ -22,6 +23,9 @@
             echo $courseDate-> format('F d, Y ');
           ?>
         </p>
+      </div>
+      <div class="course__address">
+        <p><?php echo get_field('venue_address'); ?></p>
       </div>
       </div>
 

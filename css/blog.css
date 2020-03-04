@@ -208,6 +208,12 @@
   color: #fff;
   background-color: #f54337;
   border-radius: 4px;
+  margin-bottom: 2rem;
+}
+
+.course__address {
+  font-size: 1.6rem;
+  color: #f54337;
 }
 
 .course__go-to-archive {
@@ -241,6 +247,7 @@
   display: block;
   position: relative;
   overflow: hidden;
+  border-radius: 4px;
 }
 
 .course__instructor:not(:last-of-type) {
@@ -248,7 +255,6 @@
 }
 
 .course__instructor__image {
-  border-radius: 4px;
   transition: transform .3s;
 }
 
@@ -290,6 +296,25 @@
   letter-spacing: .5px;
   color: #666;
   padding: 2.4rem;
+}
+
+.instructor__slogan {
+  font-style: italic;
+}
+
+.instructor__contact {
+  font-size: 1.6rem;
+  font-weight: 500;
+  margin-bottom: 6rem;
+}
+
+.instructor__contact__mail {
+  font-weight: 400;
+  transition: color .2s;
+}
+
+.instructor__contact__mail:hover {
+  color: #f54337;
 }
 
 @media only screen and (max-width: 700px) {
