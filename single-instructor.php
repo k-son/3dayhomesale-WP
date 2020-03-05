@@ -22,7 +22,7 @@
         <img class="instructor__image" src="<?php the_post_thumbnail_url('instructorPortrait'); ?>">
         <div class="instructor__text"><?php the_content(); ?></div>
       </div>
-      <p class="instructor__contact">Contact the instructor: <a href="mailto: #" class="instructor__contact__mail"><?php echo get_field('e-mail_address_instructor'); ?></a></p>
+      <p class="instructor__contact">Contact this instructor: <a href="mailto: #" class="instructor__contact__mail"><?php echo get_field('e-mail_address_instructor'); ?></a></p>
     </div>
     <?php } ?>
   </main>
