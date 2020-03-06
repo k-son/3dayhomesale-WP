@@ -1051,7 +1051,7 @@ Version: 1.0
     .nav__list {
       display: -webkit-box;
       display: flex; }
-      @media only screen and (max-width: 900px) {
+      @media only screen and (max-width: 1000px) {
         .nav__list {
           display: none;
           -webkit-box-orient: vertical;
@@ -1067,7 +1067,7 @@ Version: 1.0
       @media only screen and (max-width: 400px) {
         .nav__list {
           margin-right: -8rem; } }
-      @media only screen and (max-width: 900px) {
+      @media only screen and (max-width: 1000px) {
         .nav__list__item:not(:last-of-type) {
           border-bottom: 1px solid var(--color-hamburger-grey); } }
       .nav__list__link {
@@ -1077,7 +1077,7 @@ Version: 1.0
         position: relative;
         padding: 0.8rem var(--pad-horiz);
         z-index: 999; }
-        @media only screen and (max-width: 900px) {
+        @media only screen and (max-width: 1000px) {
           .nav__list__link {
             width: 100%;
             padding: 1.6rem;
@@ -1104,7 +1104,7 @@ Version: 1.0
           transition: all .5s;
           left: var(--pad-horiz);
           background-color: #000; }
-          @media only screen and (max-width: 900px) {
+          @media only screen and (max-width: 1000px) {
             .nav__list__link::before {
               display: none; } }
         .nav__list__link::after {
@@ -1124,7 +1124,7 @@ Version: 1.0
           transition: all .5s;
           left: calc(var(--pad-horiz)*(-1));
           background-color: var(--color-orange); }
-          @media only screen and (max-width: 900px) {
+          @media only screen and (max-width: 1000px) {
             .nav__list__link::after {
               display: none; } }
         .nav__list__link:hover::before, .nav__list__link:hover::after {

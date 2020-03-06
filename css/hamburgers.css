@@ -21,11 +21,10 @@
   border: 0;
   margin: 0;
   overflow: visible;
-  margin-top: 5px;
   margin-right: 25px;
   display: none; }
 
-  @media only screen and (max-width: 900px) {
+  @media only screen and (max-width: 1000px) {
     .hamburger {
       display: inline-block;
     }
@@ -70,6 +69,10 @@
   .hamburger-inner::after {
     top: -12px !important;
     background-color: inherit; }
+
+  .hamburger:hover .hamburger-inner {
+    background-color: #f54337;
+  }
 
 
    /* Collapse
