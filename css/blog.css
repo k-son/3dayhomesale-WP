@@ -8,6 +8,39 @@
   margin-bottom: 2.4rem;
 }
 
+.display-none {
+  display: none !important;
+}
+
+/* Navigation */
+.nav__list__btn {
+  display: inline-block;
+  font-size: 1.5rem;
+  padding: .8rem 2.5rem;
+  border-radius: 20px;
+  color: #fff;
+  background-color: #f54337;
+  margin: 0 1.5rem;
+  position: relative;
+  transition: all .3s;
+}
+
+.nav__list__btn:hover {
+  background-color: #fff;
+  color: #f54337;
+}
+
+@media only screen and (max-width: 1200px) {
+  .nav__list__btn {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 1.6rem 3rem;
+    border-radius: 0;
+  }
+}
+
+
 /* Header section */
 .nav__extras {
   display: flex;
@@ -100,10 +133,6 @@
   background-color: #d0d0d0;
   overflow: hidden;
   z-index: 9;
-}
-
-.display-none {
-  display: none;
 }
 
 .searchform div {

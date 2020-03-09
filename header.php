@@ -28,6 +28,13 @@
           <li class="nav__list__item"><a href="<?php echo site_url('/index.php/#howitworks'); ?>" class="nav__list__link">How it works</a></li>
           <li class="nav__list__item"><a href="<?php echo site_url('/blog'); ?>" class="nav__list__link">Blog</a></li>
           <li class="nav__list__item"><a href="<?php echo site_url('/courses'); ?>" class="nav__list__link">We Educate</a></li>
+          <?php 
+            if (is_user_logged_in()) { ?>
+              <li class="nav__list__item"><a href="<?php echo wp_logout_url(); ?>" class="nav__list__btn btn--logout">Log Out</a></li>
+          <?php } else { ?>
+              <li class="nav__list__item"><a href="<?php echo wp_login_url(); ?>" class="nav__list__btn btn--login">Login</a></li>
+              <li class="nav__list__item"><a href="<?php echo esc_url(site_url('/wp-signup.php')); ?>" class="nav__list__btn btn--signup">Sign Up</a></li>
+          <?php } ?>
         </ul>
         <div class="nav__extras">
           <button class="hamburger hamburger--collapse" type="button">
