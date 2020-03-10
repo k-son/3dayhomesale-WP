@@ -41,26 +41,27 @@
 
   add_action('wp_loaded', 'noSubsAdminBar');
 
-/*
-  function homesales_adjust_query($query) {
 
-    // Handled by queries in archive-course.php and page-past-courses.php
-    if (!is_admin() && is_post_type_archive('course') && $query->is_main_query()) {
-      $today = date('F d, Y ');
-      $query -> set('meta_key', 'course_date');
-      $query -> set('orderby', 'meta_value_num');
-      $query -> set('order', 'ASC');
-      $query -> set('meta_query', array(
-        array(
-          'key' => 'course_date',
-          'compare' => '>=',
-          'value' => $today,
-          'type' => 'numeric'
-        )
-        ));
-    }
+  /// Customize login screen
+
+  function ourLoginCSS() {
+    wp_enqueue_style('blog_styles', get_theme_file_uri('/css/blog.css'));
+    wp_enqueue_style('custom-fonts', 'https://fonts.googleapis.com/css?family=Lato|Montserrat:400,500,700&display=swap', false);
   }
 
-  add_action('pre_get_posts', 'homesales_adjust_query');
-  */
+  add_action('login_enqueue_scripts', 'ourLoginCSS');
+
+
+  function ourHeaderUrl() {
+    return esc_url(site_url('/'));
+  }
+
+  add_filter('login_headerurl', 'ourHeaderUrl');
+
+
+  function ourLoginTitle() {
+    return get_bloginfo('name');
+  }
+
+  add_filter('login_headertitle', 'ourLoginTitle');
 ?>

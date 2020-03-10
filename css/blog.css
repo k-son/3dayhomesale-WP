@@ -458,5 +458,118 @@
   .instructor__text {
     padding: 2.4rem 0;
   }
+}
 
+
+/* Login screen */
+
+.login {
+  background-color: #f0f0f0;
+}
+
+.login h1 {
+  height: 3rem;
+  margin-bottom: 1rem;
+}
+
+.login h1 a {
+  color: #f54337;
+  font-size: 24px;
+  background-image: none;
+  width: auto;
+  height: auto;
+  text-indent: 0;
+  transition: all .2s;
+  position: relative;
+  line-height: 3rem;
+  margin-left: 2rem;
+}
+
+.login h1 a:hover {
+  color: #f54337;
+  text-decoration: underline;
+}
+
+.login h1 a::before {
+  position: absolute;
+  display: inline-block;
+  content: "";
+  width: 3rem;
+  height: 2.6rem;
+  top: 0;
+  left: 1rem;
+  background-image: url('../images/home-solid.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+
+}
+
+.login .message {
+  border-left-color: #f54337;
+  border-radius: 4px;
+}
+
+.login #loginform {
+  border-radius: 4px;
+}
+
+.login input[type=text]:focus,
+.login input[type=password]:focus,
+.login input[type=checkbox]:focus {
+  border: 1px solid #f54337;
+  box-shadow: 0 0 0 1px #f54337;
+}
+
+.login input[type=checkbox] {
+  position: relative;
+  width: 1.5rem;
+  height: 1.5rem;
+}
+
+.login input[type=checkbox]:checked {
+  background-color: #f54337;
+}
+
+.login input[type=checkbox]::before {
+  border-radius: 5px;
+}
+
+.login input[type=checkbox]:checked::before {
+  content: "✔";
+  color: #fff;
+  display: block;
+  margin-top: 10px;
+  margin-left: 2px;
+}
+
+.login .dashicons:before {
+  color: #f54337;
+}
+
+#loginform .submit .button {
+  font-weight: 400;
+  color: #f54337;
+  background-color: #fff;
+  border: 2px solid #f54337;
+  border-radius: 4px;
+  transition: all .2s;
+}
+
+#loginform .submit .button:hover {
+  color: #fff;
+  background-color: #f54337;
+}
+
+.login #nav a:hover,
+.login #backtoblog a:hover {
+  color: #f54337;
+}
+
+.login .privacy-policy-link {
+  color: #f54337;
+  text-decoration: none;
+}
+
+.login .privacy-policy-link:hover {
+  text-decoration: underline;
 }
