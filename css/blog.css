@@ -464,7 +464,7 @@
 /* Login screen */
 
 .login {
-  background-color: #f0f0f0;
+  background-color: #1d2346;
 }
 
 .login h1 {
@@ -482,7 +482,7 @@
   transition: all .2s;
   position: relative;
   line-height: 3rem;
-  margin-left: 2rem;
+  margin-left: 2.5rem;
 }
 
 .login h1 a:hover {
@@ -497,25 +497,25 @@
   width: 3rem;
   height: 2.6rem;
   top: 0;
-  left: 1rem;
+  left: .6rem;
   background-image: url('../images/home-solid.png');
   background-repeat: no-repeat;
   background-size: contain;
 
 }
 
-.login .message {
-  border-left-color: #f54337;
+.login .message,
+.login #login_error {
+  border-left: 3px solid #f54337;
   border-radius: 4px;
 }
 
-.login #loginform {
+.login #loginform,
+.login #lostpasswordform {
   border-radius: 4px;
 }
 
-.login input[type=text]:focus,
-.login input[type=password]:focus,
-.login input[type=checkbox]:focus {
+.login input:focus {
   border: 1px solid #f54337;
   box-shadow: 0 0 0 1px #f54337;
 }
@@ -560,6 +560,11 @@
   background-color: #f54337;
 }
 
+.login #nav a,
+.login #backtoblog a {
+  color: #fff;
+}
+
 .login #nav a:hover,
 .login #backtoblog a:hover {
   color: #f54337;
@@ -567,9 +572,23 @@
 
 .login .privacy-policy-link {
   color: #f54337;
+  font-weight: 500;
   text-decoration: none;
 }
 
 .login .privacy-policy-link:hover {
   text-decoration: underline;
+}
+
+#wp-submit {
+  color: #fff;
+  background-color: #f54337;
+  border: 2px solid #f54337;
+  border-radius: 4px;
+  transition: all .2s;
+}
+
+ #wp-submit:hover {
+  color: #f54337;
+  background-color: #fff;
 }
