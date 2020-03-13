@@ -6,6 +6,7 @@
     <div class="blog__welcome__txt-box">
       <h1 class="blog__h1">Upcoming educational events</h1>
       <h3 class="blog__h3">We teach how to prepare houses for sale to get the best offer</h3>
+      <p><?php ?></p>
     </div>
   </header>
 

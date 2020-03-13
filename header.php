@@ -32,7 +32,7 @@
             if (is_user_logged_in()) { ?>
               <li class="nav__list__item"><a href="<?php echo wp_logout_url(); ?>" class="nav__list__btn btn--logout">Log Out</a></li>
           <?php } else { ?>
-              <li class="nav__list__item"><a href="<?php echo wp_login_url(); ?>" class="nav__list__btn btn--login">Login</a></li>
+              <li class="nav__list__item"><a href="<?php echo wp_login_url( $_SERVER["HTTP_HOST"] . $_SERVER["REQUEST_URI"]) ?>" class="nav__list__btn btn--login">Login</a></li>
               <li class="nav__list__item"><a href="<?php echo esc_url( wp_registration_url() ); ?>" class="nav__list__btn btn--signup">Sign Up</a></li>
           <?php } ?>
         </ul>

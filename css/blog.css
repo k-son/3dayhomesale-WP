@@ -560,9 +560,16 @@
   background-color: #f54337;
 }
 
+.login #nav,
+.login #backtoblog {
+  display: flex;
+  justify-content: space-around;
+}
+
 .login #nav a,
 .login #backtoblog a {
   color: #fff;
+  font-size: 1rem;
 }
 
 .login #nav a:hover,
@@ -591,4 +598,32 @@
  #wp-submit:hover {
   color: #f54337;
   background-color: #fff;
+}
+
+
+/* Comments */
+.comments__container {
+  max-width: 1200px;
+  margin: 0 auto 6rem;
+  padding: 5rem 2.5rem;
+  background-color: #f7f7f7;
+  border-radius: 5px;
+}
+
+.comments__login-notification {
+  font-size: 1.6rem;
+  margin-left: 10px;
+  margin-bottom: 2.4rem;
+}
+
+.comments__blog-link {
+  font-size: 1.4rem;
+  color: #f54337;
+  display: inline-block;
+  margin-top: 1.6rem;
+  transition: all .3s;
+}
+
+.comments__blog-link:hover {
+  text-decoration: underline;
 }

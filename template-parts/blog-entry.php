@@ -11,5 +11,8 @@
   <div class="blog__post__text">
     <?php the_excerpt(); ?>
     <p><a class="blog__post__continue-reading" href="<?php the_permalink(); ?>">Continue reading <span>&raquo;</span></a></p>
+    <?php if (get_comments_number()) { ?>
+      <a class="comments__blog-link" href="<?php echo (get_the_permalink() . '#comments'); ?>">View comments (<?php echo get_comments_number(); ?>) </a> 
+    <?php } ?>
   </div>
 </div>

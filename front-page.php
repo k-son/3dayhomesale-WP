@@ -7,7 +7,7 @@ get_header();
         <div class="welcome__content-box">
           <article class="welcome__box--1">
             <h3 class="welcome__box--1__h3">
-              We will buy your house <span class="orange-color">as is</span> in 3 days no&nbsp;fees, no&nbsp;repairs, no&nbsp;agents, no&nbsp;commissions, and no&nbsp;delays!
+              We will buy your house <span class="orange-color">as is</span> in 3 days no&nbsp;fees, no&nbsp;repairs, no&nbsp;agents, no&nbsp;commissions, and no&nbsp;delays! 
             </h3>
             <ol class="welcome__box--1__list">
               <li class="welcome__box--1__list__item">Facing Foreclosure? Need to move Quick? Job&nbsp;Change? Divorce? Need&nbsp;cash&nbsp;fast?</li>

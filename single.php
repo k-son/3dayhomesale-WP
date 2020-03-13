@@ -36,7 +36,20 @@
           <?php next_post_link('%link', '%title »', false); ?>
       </div>
     </div>
+    <div class="comments__container">
+      <?php if(is_user_logged_in()) { ?>
+        <p class="comments__login-notification">Leave a <strong>comment</strong>.</p>
+      <?php } else { ?>
+        <p class="comments__login-notification">You must be <strong>logged in</strong> to comment.</p>
+      <?php } ?>
+      
+      <?php
+        // If comments are open or we have at least one comment, load up the comment template.
+      if ( comments_open() || get_comments_number() ) :
+        comments_template();
+      endif;
+      ?>
+    </div>
   </main>
-
 </div>
 <?php get_footer(); ?>
