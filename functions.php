@@ -21,22 +21,13 @@
   add_action('after_setup_theme', 'homesales_features');
 
 
-/* //redirect to homepage
   function redirectSubsToFrontend() {
     $ourCurrentUser = wp_get_current_user();
     if (count($ourCurrentUser->roles) == 1 && $ourCurrentUser->roles[0] == 'subscriber') {
-      wp_redirect('/login/?redirect_to=' . $_SERVER["REQUEST_URI"]);
+      wp_redirect(site_url('/'));
       exit;
     }
   }
-  */
-
-  function redirectSubsToFrontend() {
-    if (!is_user_logged_in() && !is_home()) {
-      wp_redirect( get_option('home') . '?redirect_to=' . esc_url($_SERVER["HTTP_HOST"] . $_SERVER["REQUEST_URI"]) );
-    }
-      exit;
-    }
   
   add_action('admin_init', 'redirectSubsToFrontend');
 
