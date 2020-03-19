@@ -627,3 +627,43 @@
 .comments__blog-link:hover {
   text-decoration: underline;
 }
+
+/* 404 page */
+.page404__box {
+  display: flex;
+  height: calc(100vh - 40rem);
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 6rem;
+}
+
+.page404__box {
+  margin-bottom: 2rem;
+}
+
+.page404__oops,
+.page404__sorry {
+  font-size: 1.6rem;
+  font-weight: 500;
+  word-spacing: 2px;
+}
+
+.page404__404 {
+  font-size: 8rem;
+  font-weight: 800;
+  color: #f54337;
+}
+
+.page404__sorry {
+
+}
+
+.page404__back-to-main {
+  font-size: 2rem;
+  font-weight: 500;
+  word-spacing: 2px;
+  color: #f54337;
+  margin-top: 4rem;
+}
